@@ -31,6 +31,9 @@ endif
 ifeq ($(CONFIG_ARCH_MSM8937), y)
 	TARGET_KERNEL_VERSION := 4.9
 endif
+ifeq ($(CONFIG_ARCH_MSM8953), y)
+        TARGET_KERNEL_VERSION := 4.9
+endif
 KDIR := $(TOP)/kernel/msm-$(TARGET_KERNEL_VERSION)
 
 ifeq ($(KERNEL_BUILD), 1)
